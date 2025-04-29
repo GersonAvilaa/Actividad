@@ -8,6 +8,7 @@ const app = express();
 
 app.set("port",5000);
 app.use(cors());
+app.use(express.json());
 
 /* routes */
 app.use("/api/categorias",categoriasRoutes);
