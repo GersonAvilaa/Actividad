@@ -1,4 +1,4 @@
-import getConnection from "./../db/database.js"
+import { getConnection } from "./../db/database.js";
 const getCategorias = async (req,res)=>{
 try {
     const connection = await getConnection();
