@@ -10,6 +10,10 @@ app.set("port",5000);
 app.use(cors());
 app.use(express.json());
 
+app.get('/',(req,res)=>{
+res.send('REST API EN RENDER WITHOUT DATABASE ENDPOINTS')
+})
+
 /* routes */
 app.use("/api/categorias",categoriasRoutes);
 
